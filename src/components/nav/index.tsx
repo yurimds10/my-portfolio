@@ -1,17 +1,23 @@
+import { useState } from "react";
 import { FaUserAlt } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
+import { IconButton } from "../button/styles";
 import { Grid } from "../layout/styles";
 import { StyledNav } from "./styles";
 
-const Nav = () => {
+const Nav = ({ toggleProps }: any) => {
+  const [toggle, setToggle] = useState<boolean>(false);
+
+  //setToggle(toggleProps);
+
   return (
-    <StyledNav>
+    <StyledNav toggle={toggle}>
       <div>
-        <button>
+        <IconButton onClick={() => setToggle(false)}>
           <RiCloseFill/>
-        </button>
+        </IconButton>
       </div>
-      <Grid>
+      <Grid width="80px" gap="1.5rem">
         <a href="#home">
           <FaUserAlt/>
           Home

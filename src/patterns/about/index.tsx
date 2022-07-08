@@ -1,8 +1,10 @@
+import { StyledAbout } from "./styles";
+
 const About = () => {
   return (
-    <div>
+    <StyledAbout>
       
-    </div>
+    </StyledAbout>
   );
 };
 
