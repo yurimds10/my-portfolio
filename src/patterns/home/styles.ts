@@ -18,8 +18,9 @@ const HomeImg = styled.div`
   margin-bottom: 3rem;
   display: flex;
   justify-content: end;
-
+  
   @media screen and (min-width: 768px) {
+    width: 50%;
     order: 2;
     margin: 0;
   }

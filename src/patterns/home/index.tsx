@@ -3,7 +3,7 @@ import { Content, Section } from "../../components/layout/styles";
 import { HomeImg, StyledHome, HomeTitle, HomeDescription } from "./styles";
 import Socials from "../../components/socials";
 import { Button } from "../../components/button/styles";
-import { Blob } from "../../components/blob/styles";
+import Blob from "../../components/blob/index";
 
 
 

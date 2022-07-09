@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { obj } from "../../global/styles/variables";
 
-export const Blob = styled.div`
+export const StyledBlob = styled.div`
   @keyframes morph {
     0%, 100% {
       border-radius: 
@@ -23,6 +23,9 @@ export const Blob = styled.div`
   border-radius: 42% 56% 72% 28% / 42% 42% 56% 48%;
   background-color: ${obj.colors.mainColor};
   animation: morph 3.75s linear infinite;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
   @media screen and (min-width: 968px){
     width: 500px;
