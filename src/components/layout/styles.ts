@@ -13,10 +13,13 @@ interface IFlexProps {
   align?: string;
 }
 
-export const Container = styled.div`
+interface IContentProps {
+  width?: string;
+}
+
+const Container = styled.div`
   max-width: 1168px;
-  margin-left: 1.5rem;
-  margin-right: 1.5rem;
+  margin: 0 1.5rem;
   position: relative;
 
   @media screen and (min-width: 1168px) {
@@ -24,7 +27,17 @@ export const Container = styled.div`
   }
 `;
 
-export const Grid = styled.div`
+const Content = styled.div`
+  @media screen and (min-width: 768px){
+    width: 60%;  
+  }
+`;
+
+const Section = styled.section`
+  padding: 3rem 0 0;
+`;
+
+const Grid = styled.div`
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit,
@@ -33,7 +46,7 @@ export const Grid = styled.div`
   gap: ${(props: IGridProps) => props.gap};
 `;
 
-export const Flex = styled.div`
+const Flex = styled.div`
   width: ${(props: IFlexProps) => props.width};
   height: ${(props: IFlexProps) => props.height};
   display: flex;
@@ -41,3 +54,5 @@ export const Flex = styled.div`
   justify-content: ${(props:IFlexProps) => props.justify};
   align-items: ${(props:IFlexProps) => props.align};
 `;
+
+export { Container, Content, Section, Grid, Flex};

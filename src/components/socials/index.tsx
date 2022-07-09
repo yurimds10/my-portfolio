@@ -14,22 +14,22 @@ const links = {
 const Socials = (props: any) => {
   return (
     <StyledSocials margin={props.margin}>
-          <Flex
-            direction="column"
-            align="center"
-            justify="center"
-          >
-            <Link
-              href={links.linkedin}
-              target="_blank"
-            >
-              <a><ImLinkedin/></a>
-            </Link>
-            <Link
-              href={links.github}
-              target="_blank"
-            >
-              <a><GoMarkGithub/></a>
+      <Flex
+        direction="column"
+        align="center"
+        justify="center"
+      >
+        <Link
+          href={links.linkedin}
+          target="_blank"
+        >
+          <a><ImLinkedin/></a>
+        </Link>
+        <Link
+          href={links.github}
+          target="_blank"
+        >
+        <a><GoMarkGithub/></a>
             </Link>
             <Link
               href={links.instagram}

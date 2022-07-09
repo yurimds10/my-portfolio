@@ -1,7 +1,7 @@
 export const obj = {
   colors: {
-    mainColor: 'hsl(220, 95%, 60%)',
-    mainColorLighter: 'hsl(220, 95%, 95%)',
-    bodyColor: `hsl(220, 28%, 12%)`
+    mainColor: '#7562E0',
+    mainColorLighter: '#282162',
+    bodyColor: `#181824`
   },
 };
