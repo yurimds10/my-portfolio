@@ -1,6 +1,5 @@
 import { Button } from "../../components/button/styles";
 import { Section } from "../../components/layout/styles";
-import { Subtitle } from "../../components/subtitle/styles";
 import { Title } from "../../components/title/styles";
 import { StyledAbout } from "./styles";
 
@@ -9,10 +8,9 @@ const About = () => {
     <Section>
       <StyledAbout>
         <Title>About Me</Title>
-        <Subtitle>Um pouco sobre mim</Subtitle>
         <div>
           <div>
-            <img src="/" alt="Porra nenhuma" />
+            <img src="/" alt="nenhum" />
           </div>
           <div>
             <p>

@@ -2,12 +2,13 @@ import styled from "styled-components";
 import { obj } from "../../global/styles/variables";
 
 interface IButtonProps {
-  color: string;
+  color: 'primary' | 'secundary';
   margin?: string;
+  padding?: string;
 }
 
 const Button = styled.button`
-  padding: .75rem 2.25rem;
+  padding: ${(props: IButtonProps) => props.padding ?? `.75rem 2.25rem`};
   background-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColor : 'transparent'};
   color: #fff;
   border: ${`2px solid ${obj.colors.mainColor}`};

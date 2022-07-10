@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 interface IGridProps {
-  width: string;
-  gap: string;
+  width?: string;
+  gap?: string;
 }
 
 interface IFlexProps {
@@ -35,6 +35,7 @@ const Content = styled.div`
 
 const Section = styled.section`
   padding: 3rem 0 0;
+  margin-bottom: 2rem;
 `;
 
 const Grid = styled.div`

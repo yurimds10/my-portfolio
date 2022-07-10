@@ -35,4 +35,19 @@ export const GlobalStyle = createGlobalStyle`
     width: 100%;
     height: auto;
   }
+
+  ::-webkit-scrollbar {
+    width: .6rem;
+    border-radius: .5rem;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${obj.colors.mainColor};
+    border-radius: .5rem;
+    
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: ${obj.colors.mainColorLighter};
+  }
 `;
