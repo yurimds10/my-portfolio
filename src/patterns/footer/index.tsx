@@ -1,10 +1,13 @@
 import { Container } from "../../components/layout/styles";
+import { Copy, StyledFooter } from "./styles";
 
 const Footer = () => {
   return (
-    <footer>
-      
-    </footer>
+    <StyledFooter>
+      <Container>
+        <Copy>Make with ❤ by YuriMendess</Copy>
+      </Container>
+    </StyledFooter>
   );
 };
 
