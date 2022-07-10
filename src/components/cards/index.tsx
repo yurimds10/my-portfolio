@@ -10,8 +10,8 @@ const ServicesCard = () => {
 }
 
 type Portfolio = {
-  name?: string;
-  description: string;
+  name: string;
+  description: string | null;
 }
 
 const PortfolioCard = ({ name, description }: Portfolio) => {
@@ -21,9 +21,7 @@ const PortfolioCard = ({ name, description }: Portfolio) => {
 
       </div>
       <h3>{name}</h3>
-      <Description>
-        {description}
-      </Description>
+      <Description>{description}</Description>
       <Grid width="40%" gap="1rem">
         <Button color="primary">Live</Button>
         <Button color="secundary">Repository</Button>
