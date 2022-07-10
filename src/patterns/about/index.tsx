@@ -1,35 +1,21 @@
-import { Button } from "../../components/button/styles";
-import { Section } from "../../components/layout/styles";
+import { Description } from "../../components/description/styles";
+import { Flex, Section } from "../../components/layout/styles";
 import { Title } from "../../components/title/styles";
-import { StyledAbout } from "./styles";
+import { Number, Experience } from "./styles";
 
 const About = () => {
   return (
     <Section>
-      <StyledAbout>
-        <Title>About Me</Title>
-        <div>
-          <div>
-            <img src="/" alt="nenhum" />
-          </div>
-          <div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore quo aspernatur distinctio aliquam eum, repudiandae omnis sed at error doloremque suscipit magni enim, qui deleniti beatae, nam repellat impedit sequi?
-            </p>
-            <div>
-              <div>
-                <h4>01</h4>
-                <span>Years experience</span>
-              </div>
-              <div>
-                <h4>01</h4>
-                <span>Years experience</span>
-              </div>
-            </div>
-            <Button color="primary">Download CV</Button>
-          </div>
-        </div>
-      </StyledAbout>
+      <Title>About Me</Title>
+      <Description>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque recusandae aperiam, facilis possimus veritatis ex dolorem maiores? Magni ab quidem obcaecati in. Temporibus, similique tempore eum sint minus veritatis.
+      </Description>
+      <Flex align="center">
+        <Number>5+</Number>
+        <Experience>
+          Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+        </Experience>
+      </Flex>
     </Section>
   );
 };
