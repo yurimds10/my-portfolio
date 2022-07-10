@@ -11,20 +11,21 @@ const ServicesCard = () => {
 
 type Portfolio = {
   name?: string;
+  description: string;
 }
 
-const PortfolioCard = (props: Portfolio) => {
+const PortfolioCard = ({ name, description }: Portfolio) => {
   return (
     <StyledPortfolioCard>
       <div className="image-content">
 
       </div>
-      <h3>My Project</h3>
+      <h3>{name}</h3>
       <Description>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus voluptatum pariatur, tempore, amet id sapiente vitae fuga nemo doloremque est suscipit dolorum aspernatur? Maiores velit iste in illo delectus obcaecati!
+        {description}
       </Description>
       <Grid width="40%" gap="1rem">
-        <Button color="primary" padding="0 2rem">Live</Button>
+        <Button color="primary">Live</Button>
         <Button color="secundary">Repository</Button>
       </Grid>
       

@@ -11,7 +11,7 @@ const Button = styled.button`
   padding: ${(props: IButtonProps) => props.padding ?? `.75rem 2.25rem`};
   background-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColor : 'transparent'};
   color: #fff;
-  border: ${`2px solid ${obj.colors.mainColor}`};
+  border: 2px solid ${obj.colors.mainColor};
   border-radius: .5rem;
   cursor: pointer;
   transition: .3s;
