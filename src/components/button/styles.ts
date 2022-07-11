@@ -2,13 +2,19 @@ import styled from "styled-components";
 import { obj } from "../../global/styles/variables";
 
 interface IButtonProps {
-  color: 'primary' | 'secundary';
+  color: 'primary' | 'secondary';
   margin?: string;
   padding?: string;
 }
 
-const Button = styled.button`
-  padding: ${(props: IButtonProps) => props.padding ?? `.75rem 2.25rem`};
+const Button = styled.a`
+  @media screen and (max-width: 340px) {
+    margin: 0 0 1rem 0;
+  }
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: ${(props: IButtonProps) => props.padding ?? `.5rem 2rem`};
   background-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColor : 'transparent'};
   color: #fff;
   border: 2px solid ${obj.colors.mainColor};

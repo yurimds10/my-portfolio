@@ -1,10 +1,14 @@
 import styled from "styled-components";
 
 const StyledHome = styled.section`
-  height: 75vh;
+  
   position: relative;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: 300px) {
+    height: 75vh;
+  }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;

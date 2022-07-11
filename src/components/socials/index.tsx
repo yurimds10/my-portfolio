@@ -15,30 +15,31 @@ const Socials = (props: any) => {
   return (
     <StyledSocials margin={props.margin}>
       <Flex
-        direction="column"
         align="center"
-        justify="center"
+        justify="space-between"
       >
         <Link
           href={links.linkedin}
           target="_blank"
         >
-          <a><ImLinkedin/></a>
+          <span><ImLinkedin/></span>
         </Link>
+
         <Link
           href={links.github}
           target="_blank"
         >
-        <a><GoMarkGithub/></a>
-            </Link>
-            <Link
-              href={links.instagram}
-              target="_blank"
-            >
-              <span><FaInstagram/></span>
-            </Link>
-          </Flex>
-      </StyledSocials>
+          <span><GoMarkGithub/></span>
+        </Link>
+
+        <Link
+          href={links.instagram}
+          target="_blank"
+        >
+          <span><FaInstagram/></span>
+        </Link>
+      </Flex>
+    </StyledSocials>
   );
 };
 

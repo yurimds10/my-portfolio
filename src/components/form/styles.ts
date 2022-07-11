@@ -26,7 +26,7 @@ const Input = styled.input`
   outline: none;
 `;
 
-const TextArea = styled.input`
+const TextArea = styled.textarea`
   margin-top: .5rem;
   width: 100%;
   background-color: transparent;

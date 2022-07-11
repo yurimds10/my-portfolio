@@ -39,6 +39,10 @@ const Section = styled.section`
 `;
 
 const Grid = styled.div`
+  @media screen and (max-width: 300px) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit,

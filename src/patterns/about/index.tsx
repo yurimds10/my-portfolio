@@ -5,7 +5,7 @@ import { Number, Experience } from "./styles";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Title>About Me</Title>
       <Description>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque recusandae aperiam, facilis possimus veritatis ex dolorem maiores? Magni ab quidem obcaecati in. Temporibus, similique tempore eum sint minus veritatis.
