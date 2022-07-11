@@ -41,6 +41,10 @@ const IconButton = styled.button`
   &:hover {
     color: ${obj.colors.mainColor};
   }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 
 export { Button, IconButton };

@@ -6,7 +6,7 @@ import { Title } from "../../components/title/styles";
 
 const Contact = () => {
   return (
-    <Section>
+    <Section id="contact">
       <Grid width="270px" gap="3rem">
         <div>
           <Title>Connect with me:</Title>

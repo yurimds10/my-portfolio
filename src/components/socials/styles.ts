@@ -6,8 +6,7 @@ interface ISocialsProps {
 }
 
 export const StyledSocials = styled.div`
-  
-  width: 25%;  
+  width: 6rem;  
   margin-right: ${(props: ISocialsProps) => props.margin};
 
   span {

@@ -7,7 +7,7 @@ import { RiPagesFill } from 'react-icons/ri';
 
 const Services = () => {
   return (
-    <Section>
+    <Section id="services">
       <Title>The services I offer:</Title>
       <Grid width="220px" gap="1rem">
         <ServicesCard border="primary">

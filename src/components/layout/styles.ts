@@ -1,3 +1,4 @@
+import { prependOnceListener } from "process";
 import styled from "styled-components";
 
 interface IGridProps {
@@ -11,6 +12,7 @@ interface IFlexProps {
   direction?: string;
   justify?: string;
   align?: string;
+  wrap?: 'wrap' | 'nowrap';
 }
 
 interface IContentProps {
@@ -58,6 +60,7 @@ const Flex = styled.div`
   flex-direction: ${(props:IFlexProps) => props.direction};
   justify-content: ${(props:IFlexProps) => props.justify};
   align-items: ${(props:IFlexProps) => props.align};
+  flex-wrap: ${(props: IFlexProps) => props.wrap};
 `;
 
 export { Container, Content, Section, Grid, Flex};
