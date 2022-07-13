@@ -7,7 +7,7 @@ const StyledHome = styled.section`
   flex-direction: column;
 
   @media screen and (min-width: 300px) {
-    height: 65vh;
+    height: 70vh;
   }
 
   @media screen and (min-width: 768px) {

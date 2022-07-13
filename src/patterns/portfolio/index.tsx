@@ -28,7 +28,7 @@ const Portfolio = () => {
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos excepturi doloribus dignissimos fugit ipsam. Ipsa obcaecati unde laudantium, repudiandae dicta sint earum molestiae libero tempore fuga accusantium, aliquid veritatis?
       </Description>
       <Grid width="290px" gap="1rem">
-        { isFetching && <p>loading...</p> }
+        { isFetching && <p style={{textAlign: 'center', fontSize: '1.25rem'}}>loading...</p> }
         {data?.map(repository => {
           return (
             <PortfolioCard

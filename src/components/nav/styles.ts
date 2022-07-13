@@ -28,9 +28,12 @@ const NavList = styled.div`
 
   @media screen and (min-width: 768px) {
     display: flex;
-    column-gap: 4rem;  
+    column-gap: 3rem;  
   }
-  
+
+  @media screen and (min-width: 968px) {
+    column-gap: 4rem;
+  }
 `;
 
 const NavLink = styled.a`

@@ -1,14 +1,7 @@
-import Link from "next/link";
 import { Button } from "../button/styles";
 import { Description } from "../description/styles";
-import { Flex, Grid } from "../layout/styles";
+import { Grid } from "../layout/styles";
 import { StyledPortfolioCard } from "./styles";
-
-const ServicesCard = () => {
-  return (
-    <div></div>
-  )
-}
 
 type Portfolio = {
   name: string;
@@ -17,7 +10,7 @@ type Portfolio = {
   website: string;
 }
 
-const PortfolioCard = ({ name, description, repository, website }: Portfolio) => {
+export const PortfolioCard = ({ name, description, repository, website }: Portfolio) => {
   return (
     <StyledPortfolioCard>
       <div className="image-content">
@@ -37,5 +30,3 @@ const PortfolioCard = ({ name, description, repository, website }: Portfolio) =>
     </StyledPortfolioCard>
   )
 }
-
-export { PortfolioCard };

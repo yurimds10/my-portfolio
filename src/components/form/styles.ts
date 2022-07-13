@@ -3,7 +3,7 @@ import { obj } from "../../global/styles/variables";
 
 const FormTitle = styled.h2`
   font-size: 1.5rem;
-  font-weight: 500;
+  font-weight: 400;
   margin-bottom: 1rem;
 `;
 
@@ -14,6 +14,8 @@ const Label = styled.label`
   background-color: ${obj.colors.lowPriority};
   border-radius: .5rem;
   margin-bottom: 1rem;
+  color: ${obj.colors.mainColor};
+  font-weight: 500;
 `;
 
 const Input = styled.input`
