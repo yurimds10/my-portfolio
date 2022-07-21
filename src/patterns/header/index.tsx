@@ -2,7 +2,7 @@ import { Container, Flex, Grid } from "../../components/layout/styles";
 import { Nav, NavLink, NavList } from "../../components/nav/styles";
 import { FaUserAlt } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
-import { Buttons, StyledHeader } from "./styles";
+import { StyledHeader } from "./styles";
 import { IoMdApps } from 'react-icons/io';
 import { IconButton } from "../../components/button/styles";
 import { Logo } from "../../components/logo/styles";

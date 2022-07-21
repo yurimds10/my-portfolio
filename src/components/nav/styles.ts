@@ -40,9 +40,10 @@ const NavLink = styled.a`
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: .3s;
 
-  :hover {
-    color: ${obj.colors.mainColor};
+  &:hover {
+    color: ${obj.colors.mainColorLighter};
   }
 
   svg {
@@ -51,6 +52,10 @@ const NavLink = styled.a`
   }
 
   @media screen and (min-width: 768px) {
+    &:hover {
+      color: ${obj.colors.mainColor};
+    }
+
     svg { display: none; }
   }
 `;

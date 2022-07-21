@@ -5,8 +5,6 @@ import Socials from "../../components/socials";
 import { Button } from "../../components/button/styles";
 import Blob from "../../components/blob/index";
 
-
-
 const Home = () => {
   return (
     <Section>

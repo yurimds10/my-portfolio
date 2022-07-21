@@ -8,4 +8,10 @@ export const SkillCard = styled.div`
   align-items: center;
   justify-content: center;
   border-radius: .5rem;
+  font-size: 6rem;
+  transition: .3s;
+
+  &:hover {
+    border: 2px solid ${obj.colors.mainColorLighter};
+  }
 `;

@@ -1,26 +1,55 @@
-import { useState } from "react";
 import { Grid, Section } from "../../components/layout/styles";
 import { Title } from "../../components/title/styles";
 import { SkillCard } from "./styles";
 
 const Skills = () => {
-  const [content, setContent] = useState<string>('');
-  const [skill,  setSkill] = useState<string>('');
-
   return (
-    <Section>
+    <Section id="skills">
       <Title>My skills</Title>
-      <Grid width="100px" gap="1rem">
-        <SkillCard>{"html"}</SkillCard>
-        <SkillCard>{"css"}</SkillCard>
-        <SkillCard>{"javascript"}</SkillCard>
-        <SkillCard>{"typescript"}</SkillCard>
-        <SkillCard>{"sass"}</SkillCard>
-        <SkillCard>{"reactjs"}</SkillCard>
-        <SkillCard>{"nextjs"}</SkillCard>
-        <SkillCard>{"styled"}</SkillCard>
-        <SkillCard>{"nodejs"}</SkillCard>
-        <SkillCard>{"express"}</SkillCard>
+      <Grid width="125px" gap="1rem">
+        <SkillCard>
+          <i className="devicon-html5-plain-wordmark colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-css3-plain-wordmark colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-javascript-plain colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-typescript-plain colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-sass-original colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-react-original-wordmark colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-nextjs-plain"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-nodejs-plain colored"/>
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-express-original-wordmark" />
+        </SkillCard>
+
+        <SkillCard>
+          <i className="devicon-git-plain colored"/>
+        </SkillCard>
+        
+        <SkillCard>
+          <i className="devicon-github-original"/>
+        </SkillCard>
       </Grid>
     </Section>
   );

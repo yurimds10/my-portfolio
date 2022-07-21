@@ -36,6 +36,7 @@ const TextArea = styled.textarea`
   color: #fff;
   font-size: 1rem;
   outline: none;
+  resize: none;
 `;
 
 export { FormTitle, Label, Input, TextArea };
