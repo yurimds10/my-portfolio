@@ -29,21 +29,4 @@ export const ServicesCard = styled.div`
   }
 `;
 
-export const StyledPortfolioCard = styled.div`
-  padding: 1rem 1rem 2rem 1rem;
-  border-radius: .5rem;
-  background-color: ${obj.colors.lowPriority};
 
-  .image-content {
-    height: 13rem;
-    margin-bottom: 1rem;
-    border: 2px solid ${obj.colors.mainColor};
-    border-radius: .5rem;
-  }
-
-  h3 {
-    text-transform: uppercase;
-    color: ${obj.colors.mainColor};
-    margin-bottom: 1rem;
-  }
-`;

@@ -5,8 +5,6 @@ import Socials from "../../components/socials";
 import { Button } from "../../components/button/styles";
 import Blob from "../../components/blob/index";
 
-
-
 const Home = () => {
   return (
     <Section>
@@ -19,8 +17,8 @@ const Home = () => {
           <HomeDescription>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime rem, non eum aspernatur, amet perspiciatis voluptates necessitatibus quas quae illo eveniet esse itaque aut unde nisi natus sequi sit? Mollitia?
           </HomeDescription>
-          <Button color="primary" margin="1rem">About Me</Button>
-          <Button color="secondary">My Projects</Button>
+          <Button href="#about" color="primary" margin="1rem">About Me</Button>
+          <Button href="#portfolio" color="secondary">My Projects</Button>
         </Content>
       </StyledHome>
     </Section>

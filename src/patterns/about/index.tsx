@@ -5,13 +5,13 @@ import { Number, Experience } from "./styles";
 
 const About = () => {
   return (
-    <Section>
+    <Section id="about">
       <Title>About Me</Title>
       <Description>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque recusandae aperiam, facilis possimus veritatis ex dolorem maiores? Magni ab quidem obcaecati in. Temporibus, similique tempore eum sint minus veritatis.
       </Description>
       <Flex align="center">
-        <Number>5+</Number>
+        <Number>1+</Number>
         <Experience>
           Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
         </Experience>

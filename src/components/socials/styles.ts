@@ -1,14 +1,22 @@
 import styled from "styled-components";
+import { obj } from "../../global/styles/variables";
 
 interface ISocialsProps {
   margin?: string;
 }
 
-const StyledSocials = styled.div`
-  border: 1px solid red;
-  position: absolute;
-  left: 0;
+export const StyledSocials = styled.div`
+  width: 6rem;  
   margin-right: ${(props: ISocialsProps) => props.margin};
-`;
 
-export { StyledSocials };
+  span {
+    font-size: 1.5rem;
+    color: ${obj.colors.mainColor};
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+      color: ${obj.colors.mainColorLighter};
+    }
+  }
+`;

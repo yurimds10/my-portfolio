@@ -2,13 +2,32 @@
 import { Button } from "../button/styles";
 import { FormTitle, Label, Input, TextArea } from "./styles";
 
+type Message = {
+  myEmail: string;
+  name: string;
+  email: string;
+  message: string;
+}
+
 export const Form = () => {
+
+  const sendMessage = () => {
+    const messageForMe: Message = {
+      myEmail: 'contato.yurimendess@gmail.com',
+      name: '',
+      email: '',
+      message: ''
+    };
+
+    console.log(messageForMe);
+  };
+
   return (
-    <form>
+    <form method="POST" >
       <FormTitle>Contact me, let's make magic together</FormTitle>
       <Label htmlFor="name">
         Name
-        <Input type="text" />
+        <Input type="text" onChange={(e) => e.target.value}/>
       </Label>
 
       <Label htmlFor="email">
@@ -18,9 +37,9 @@ export const Form = () => {
 
       <Label htmlFor="name">
         Message
-        <TextArea></TextArea>
+        <TextArea />
       </Label>
-      <Button color="primary">Send</Button>
+      <Button color="primary" onClick={() => sendMessage()}>Send</Button>
     </form>
   );
 };

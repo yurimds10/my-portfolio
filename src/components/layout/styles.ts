@@ -1,3 +1,4 @@
+import { prependOnceListener } from "process";
 import styled from "styled-components";
 
 interface IGridProps {
@@ -11,6 +12,7 @@ interface IFlexProps {
   direction?: string;
   justify?: string;
   align?: string;
+  wrap?: 'wrap' | 'nowrap';
 }
 
 interface IContentProps {
@@ -39,6 +41,10 @@ const Section = styled.section`
 `;
 
 const Grid = styled.div`
+  @media screen and (max-width: 300px) {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+  }
+  
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit,
@@ -54,6 +60,7 @@ const Flex = styled.div`
   flex-direction: ${(props:IFlexProps) => props.direction};
   justify-content: ${(props:IFlexProps) => props.justify};
   align-items: ${(props:IFlexProps) => props.align};
+  flex-wrap: ${(props: IFlexProps) => props.wrap};
 `;
 
 export { Container, Content, Section, Grid, Flex};

@@ -5,7 +5,7 @@ interface INavProps {
   toggle: boolean;
 }
 
-export const StyledNav = styled.nav`
+const Nav = styled.nav`
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 2rem 1rem;
@@ -15,15 +15,49 @@ export const StyledNav = styled.nav`
     left: 0;
     border-radius: 1.5rem 1.5rem 0 0;
     transition: .3s;
-    
   }
-  border: 1px solid red;
-  display: none;
-  
+
+  padding: 0;
+  background: transparent;
+`;
+
+const NavList = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
 
   @media screen and (min-width: 768px) {
-    
-    padding: 0;
-    background: transparent;
+    display: flex;
+    column-gap: 3rem;  
+  }
+
+  @media screen and (min-width: 968px) {
+    column-gap: 4rem;
   }
 `;
+
+const NavLink = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: .3s;
+
+  &:hover {
+    color: ${obj.colors.mainColorLighter};
+  }
+
+  svg {
+    font-size: 1.5rem;
+    margin-bottom: .5rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    &:hover {
+      color: ${obj.colors.mainColor};
+    }
+
+    svg { display: none; }
+  }
+`;
+
+export { Nav, NavList, NavLink }; 
