@@ -7,7 +7,6 @@ export const PortfolioCard = styled.div`
   background-color: ${obj.colors.lowPriority};
 
   .image-content {
-    height: auto;
     margin-bottom: 1rem;
     border: 2px solid ${obj.colors.mainColor};
     border-radius: .5rem;

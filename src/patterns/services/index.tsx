@@ -1,5 +1,5 @@
-import { ServicesCard } from "../../components/cards/styles";
-import { Flex, Grid, Section } from "../../components/layout/styles";
+import { ServicesCard } from "./styles";
+import { Grid, Section } from "../../components/layout/styles";
 import { Title } from "../../components/title/styles";
 import { TbBrandJavascript } from 'react-icons/tb';
 import { BiCodeBlock } from 'react-icons/bi';
