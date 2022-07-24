@@ -1,9 +1,12 @@
 import { Container, Flex, Grid } from "../../components/layout/styles";
 import { Nav, NavLink, NavList } from "../../components/nav/styles";
-import { FaUserAlt } from "react-icons/fa";
+import { FaUserAlt, FaPhoneAlt } from "react-icons/fa";
 import { RiCloseFill } from "react-icons/ri";
 import { StyledHeader } from "./styles";
 import { IoMdApps } from 'react-icons/io';
+import {IoDocumentText, IoBag} from 'react-icons/io5';
+import { AiFillPicture } from 'react-icons/ai';
+import { BsFillHouseDoorFill } from 'react-icons/bs';
 import { IconButton } from "../../components/button/styles";
 import { Logo } from "../../components/logo/styles";
 import { useState } from "react";
@@ -28,7 +31,7 @@ const Header = () => {
             </IconButton>
             <NavList>
               <NavLink href="#">
-                <FaUserAlt/>
+                <BsFillHouseDoorFill/>
                 Home
               </NavLink>
 
@@ -38,22 +41,22 @@ const Header = () => {
               </NavLink>
 
               <NavLink href="#skills">
-                <FaUserAlt/>
+                <IoDocumentText/>
                 Skills
               </NavLink>
 
               <NavLink href="#services">
-                <FaUserAlt/>
+                <IoBag/>
                 Services
               </NavLink>
 
               <NavLink href="#portfolio">
-                <FaUserAlt/>
+                <AiFillPicture/>
                 Portfolio
               </NavLink>
 
               <NavLink href="#contact">
-                <FaUserAlt/>
+                <FaPhoneAlt/>
                 Contact Me
               </NavLink>
             </NavList>
