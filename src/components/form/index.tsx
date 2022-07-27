@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Button } from "../button/styles";
-import { FormTitle, Label, Input, TextArea } from "./styles";
+import { StyledForm, FormTitle, Label, Input, TextArea } from "./styles";
 
 type Message = {
   myEmail: string;
@@ -23,7 +23,7 @@ export const Form = () => {
   };
 
   return (
-    <form method="POST" >
+    <StyledForm method="POST" >
       <FormTitle>Contact me, let's make magic together</FormTitle>
       <Label htmlFor="name">
         Name
@@ -40,6 +40,6 @@ export const Form = () => {
         <TextArea />
       </Label>
       <Button color="primary" onClick={() => sendMessage()}>Send</Button>
-    </form>
+    </StyledForm>
   );
 };
