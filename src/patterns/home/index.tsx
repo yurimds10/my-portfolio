@@ -1,13 +1,12 @@
 /* eslint-disable react/no-unescaped-entities */
 import { Content, Section } from "../../components/layout/styles";
 import { HomeImg, StyledHome, HomeTitle, HomeDescription } from "./styles";
-import Socials from "../../components/socials";
 import { Button } from "../../components/button/styles";
 import Blob from "../../components/blob/index";
 
 const Home = () => {
   return (
-    <Section>
+    <Section id="home">
       <StyledHome>      
         <HomeImg>
           <Blob></Blob>
@@ -22,7 +21,6 @@ const Home = () => {
         </Content>
       </StyledHome>
     </Section>
-    
   );
 };
 

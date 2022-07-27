@@ -9,7 +9,7 @@ const Nav = styled.nav`
   @media screen and (max-width: 767px) {
     width: 100%;
     padding: 2rem 1rem;
-    background: ${obj.colors.mainColor};
+    background: ${obj.colors.mainColorLighter};
     position: fixed;
     bottom: ${(props: INavProps) => props.toggle === false ? "-100%" : "0"};
     left: 0;
@@ -41,9 +41,28 @@ const NavLink = styled.a`
   flex-direction: column;
   align-items: center;
   transition: .3s;
+  font-weight: 400;
+
+  &.active-link {
+    position: relative;
+    color: ${obj.colors.mainColor};
+    
+    @media screen and (min-width: 768px) {
+      &::after {
+        content: '';
+        position: absolute;
+        bottom: -.5rem;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: ${obj.colors.mainColor};
+      }
+    }
+  } 
+  
 
   &:hover {
-    color: ${obj.colors.mainColorLighter};
+    color: ${obj.colors.mainColor};
   }
 
   svg {

@@ -1,6 +1,10 @@
 import styled from "styled-components";
 import { obj } from "../../global/styles/variables";
 
+const StyledForm = styled.form`
+  margin-bottom: 8rem;
+`;
+
 const FormTitle = styled.h2`
   font-size: 1.5rem;
   font-weight: 400;
@@ -31,6 +35,7 @@ const Input = styled.input`
 const TextArea = styled.textarea`
   margin-top: .5rem;
   width: 100%;
+  height: 10rem;
   background-color: transparent;
   border: none;
   color: #fff;
@@ -39,4 +44,4 @@ const TextArea = styled.textarea`
   resize: none;
 `;
 
-export { FormTitle, Label, Input, TextArea };
+export { StyledForm, FormTitle, Label, Input, TextArea };
