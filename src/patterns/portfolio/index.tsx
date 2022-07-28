@@ -63,7 +63,7 @@ const Portfolio = () => {
             <Button href="" target="_blank" color="primary">
               Live
             </Button>
-            <Button href="" target="_blank" color="secondary">
+            <Button href="https://github.com/YuriMendess/NFT-Marketplace" target="_blank" color="secondary">
               Repository
             </Button>
           </Grid>
@@ -96,10 +96,10 @@ const Portfolio = () => {
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
+            <Button href="https://plants-472428.netlify.app/" target="_blank" color="primary">
               Live
             </Button>
-            <Button href="" target="_blank" color="secondary">
+            <Button href="https://github.com/YuriMendess/plants-website" target="_blank" color="secondary">
               Repository
             </Button>
           </Grid>

@@ -2,14 +2,15 @@
 import { Content, Section } from "../../components/layout/styles";
 import { HomeImg, StyledHome, HomeTitle, HomeDescription } from "./styles";
 import { Button } from "../../components/button/styles";
-import Blob from "../../components/blob/index";
+import { ReactElement as SVG } from "../../assets/img/home.svg";
+import Image from "next/image";
 
 const Home = () => {
   return (
     <Section id="home">
       <StyledHome>      
         <HomeImg>
-          <Blob></Blob>
+          <Image src={SVG} alt="home-img"/>
         </HomeImg>
         <Content>
           <HomeTitle>Hello, I'm <br/> <span>Yuri Mendes</span></HomeTitle>
