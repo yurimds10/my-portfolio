@@ -16,19 +16,19 @@ const Header = () => {
 
   useEffect(() => {
     const scrollActive = () => {
-      const sections = document.querySelectorAll('section[id]');
+      const sections = document.querySelectorAll('section[id]') as NodeListOf<Element> | any ;
       const scrollY = window.scrollY;
     
-      sections.forEach(current => {
+      sections.forEach((current: any) => {
         const sectionHeight = current.scrollHeight;
         const sectionTop = current.offsetTop - 58;
         const sectionId = current.getAttribute('id');
     
         if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-          document.querySelector<Element>(`.nav a[href*=${sectionId}]`).classList.add('active-link');
+          document.querySelector(`.nav a[href*=${sectionId}]`)!.classList.add('active-link');
     
         } else {
-          document.querySelector(`.nav a[href*=${sectionId}]`).classList.remove('active-link');
+          document.querySelector(`.nav a[href*=${sectionId}]`)!.classList.remove('active-link');
         }
       });
     };
