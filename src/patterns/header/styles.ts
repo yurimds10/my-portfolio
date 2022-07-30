@@ -6,8 +6,8 @@ const StyledHeader = styled.header`
   position: fixed;
   bottom: 0;
   left: 0;
-  height: 3.5rem;
-  z-index: 100;
+  height: 4rem;
+  z-index: 2;
   background-color: ${obj.colors.bodyColor};  
 
   @media screen and (min-width: 768px) {

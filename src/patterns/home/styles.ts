@@ -1,25 +1,21 @@
 import styled from "styled-components";
+import { obj } from "../../global/styles/variables";
 
 const StyledHome = styled.section`
-  
-  position: relative;
   display: flex;
   flex-direction: column;
-
-  @media screen and (min-width: 300px) {
-    height: 70vh;
-  }
 
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    height: 70vh;
   }
 `;
 
 const HomeImg = styled.div`
   width: 100%;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   display: flex;
   justify-content: end;
   
@@ -34,9 +30,21 @@ const HomeTitle = styled.h1`
   font-size: 1.5rem;
   font-weight: 500;
   margin-bottom: 1rem;
+  color: #fff;
 
   span {
-    font-size: 2.5rem;
+    display: block;
+    
+    &.name {
+      color: ${obj.colors.mainColor};
+      font-size: 3rem;
+      margin-bottom: .25rem;
+    }
+
+    &.job {
+      color: #fff;
+      font-size: 1rem;
+    }
   }
 `;
 

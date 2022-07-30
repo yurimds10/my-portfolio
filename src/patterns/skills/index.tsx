@@ -4,8 +4,8 @@ import { SkillCard } from "./styles";
 
 const Skills = () => {
   return (
-    <Section id="skills">
-      <Title>My skills</Title>
+    <Section paddingTop="3rem" id="skills">
+      <Title>Minhas habilidades</Title>
       <Grid width="125px" gap="1rem">
         <SkillCard>
           <i className="devicon-html5-plain-wordmark colored"/>

@@ -5,15 +5,15 @@ import { Number, Experience } from "./styles";
 
 const About = () => {
   return (
-    <Section id="about">
-      <Title>About Me</Title>
+    <Section paddingTop="3rem" id="about">
+      <Title>Sobre mim</Title>
       <Description>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur itaque recusandae aperiam, facilis possimus veritatis ex dolorem maiores? Magni ab quidem obcaecati in. Temporibus, similique tempore eum sint minus veritatis.
+        Apaixonado por tecnologia e seus impactos na nossa sociedade. Meu desejo sempre foi causar impacto no mundo e ajudar as pessoas. Atrelado por essa minha vontade, me encontrei no mundo da programação, assim causando impacto através dos códigos e soluções. Hoje trabalho tanto com front-end como também back-end, apesar do meu foco estar mais atrelado ao front-end.
       </Description>
       <Flex align="center">
         <Number>1+</Number>
         <Experience>
-          Years of experience. Specialised in building apps, while ensuring a seamless web experience for end users.
+          Ano de experiência. Atualmente estudando e criando projetos front-end para ganhar mais experiência.
         </Experience>
       </Flex>
     </Section>

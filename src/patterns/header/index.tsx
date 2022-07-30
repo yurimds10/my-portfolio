@@ -59,27 +59,27 @@ const Header = () => {
 
               <NavLink href="#about">
                 <FaUserAlt/>
-                About
+                Sobre
               </NavLink>
 
               <NavLink href="#skills">
                 <IoDocumentText/>
-                Skills
+                Habilidades
               </NavLink>
 
               <NavLink href="#services">
                 <IoBag/>
-                Services
+                Serviços
               </NavLink>
 
               <NavLink href="#portfolio">
                 <AiFillPicture/>
-                Portfolio
+                Portfólio
               </NavLink>
 
               <NavLink href="#contact">
                 <FaPhoneAlt/>
-                Contact Me
+                Contato
               </NavLink>
             </NavList>
           </Nav>

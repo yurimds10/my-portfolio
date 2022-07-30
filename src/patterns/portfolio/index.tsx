@@ -13,10 +13,10 @@ import Image from "next/image";
 
 const Portfolio = () => {
   return (
-    <Section id="portfolio">
-      <Title>My Projects</Title>
+    <Section paddingTop="3rem" id="portfolio">
+      <Title>Meus projetos</Title>
       <Description>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos excepturi doloribus dignissimos fugit ipsam. Ipsa obcaecati unde laudantium, repudiandae dicta sint earum molestiae libero tempore fuga accusantium, aliquid veritatis?
+        Esses são meus projetos que desenvolvi ao longo da minha carreira como programador.
       </Description>
       <Grid width="290px" gap="1rem">
         <PortfolioCard>
@@ -24,13 +24,13 @@ const Portfolio = () => {
             <Image src={HeadphoneImg} alt="headphone-image" />
           </div>
           <h3>Headphone - Landing Page</h3>
-          <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.</Description>
+          <Description>🎧 | Uma Landing Page sobre headphones Beats</Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">
-              Live
+              Acessar
             </Button>
             <Button href="" target="_blank" color="secondary">
-              Repository
+              Repositório
             </Button>
           </Grid>
         </PortfolioCard>

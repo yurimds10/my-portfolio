@@ -1,4 +1,5 @@
 import { prependOnceListener } from "process";
+import { AiFillPropertySafety } from "react-icons/ai";
 import styled from "styled-components";
 
 interface IGridProps {
@@ -6,6 +7,9 @@ interface IGridProps {
   gap?: string;
 }
 
+interface ISectionProps {
+  paddingTop: '0' | '3rem';
+}
 interface IFlexProps {
   width?: string;
   height?: string;
@@ -13,10 +17,6 @@ interface IFlexProps {
   justify?: string;
   align?: string;
   wrap?: 'wrap' | 'nowrap';
-}
-
-interface IContentProps {
-  width?: string;
 }
 
 const Container = styled.div`
@@ -36,7 +36,7 @@ const Content = styled.div`
 `;
 
 const Section = styled.section`
-  padding: 3rem 0 0;
+  padding: ${(props: ISectionProps) => props.paddingTop} 0 0;
   margin-bottom: 2rem;
 `;
 

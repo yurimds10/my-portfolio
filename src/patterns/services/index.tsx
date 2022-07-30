@@ -7,28 +7,28 @@ import { RiPagesFill } from 'react-icons/ri';
 
 const Services = () => {
   return (
-    <Section id="services">
-      <Title>The services I offer:</Title>
+    <Section paddingTop="3rem" id="services">
+      <Title>Os serviços que eu ofereço:</Title>
       <Grid width="220px" gap="1rem">
         <ServicesCard border="primary">
           <BiCodeBlock/>
-          <h3>Front-end Solutions</h3>
+          <h3>Soluções Front-end</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et ut necessitatibus maiores dignissimos, veniam ipsa sit perspiciatis aspernatur. Recusandae, aliquam. Soluta dolorum officia quasi quam dolor quis iste. Quos?
+            Criação de Landing Pages, Websites Institucionais, WebApps e Ecommerce.
           </p>
         </ServicesCard>
         <ServicesCard border="secundary">
           <RiPagesFill/>
-          <h3>SEO and Performance</h3>
+          <h3>SEO e Performance</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et ut necessitatibus maiores dignissimos, veniam ipsa sit perspiciatis aspernatur. Recusandae, aliquam. Soluta dolorum officia quasi quam dolor quis iste. Quos?
+            Otimização de SEO para seu negócio ser visto por todos e otimização de aplicações para melhor desempenho e experiência de usuário.
           </p>
         </ServicesCard>
         <ServicesCard border="primary">
           <TbBrandJavascript/>
-          <h3>Back-end Solutions</h3>
+          <h3>Soluções Back-end</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum et ut necessitatibus maiores dignissimos, veniam ipsa sit perspiciatis aspernatur. Recusandae, aliquam. Soluta dolorum officia quasi quam dolor quis iste. Quos?
+            Criação de API's, manipulação de banco de dados e formulários.
           </p>
         </ServicesCard>
       </Grid>

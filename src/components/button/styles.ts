@@ -8,9 +8,10 @@ interface IButtonProps {
 }
 
 const Button = styled.a`
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 400px) {
     margin: 0 0 1rem 0;
   }
+
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -26,6 +27,10 @@ const Button = styled.a`
   &:hover {
     background-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColorLighter : obj.colors.mainColor};
     border-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColorLighter : ''};
+  }
+
+  svg {
+    margin-left: .5rem;
   }
 `;
 
