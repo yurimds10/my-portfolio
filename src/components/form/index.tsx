@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+import { useRef } from "react";
 import { Button } from "../button/styles";
 import { StyledForm, FormTitle, Label, Input, TextArea } from "./styles";
 
@@ -11,16 +12,12 @@ type Message = {
 
 export const Form = () => {
 
-  const sendMessage = () => {
-    const messageForMe: Message = {
-      myEmail: 'contato.yurimendess@gmail.com',
-      name: '',
-      email: '',
-      message: ''
-    };
+  // const sendEmail = (e) => {
+  //   e.preventDefault();
+  //   emailjs
 
-    console.log(messageForMe);
-  };
+    
+  // };
 
   return (
     <StyledForm method="POST" >
@@ -39,7 +36,7 @@ export const Form = () => {
         Message
         <TextArea />
       </Label>
-      <Button color="primary" onClick={() => sendMessage()}>Send</Button>
+      <Button color="primary">Send</Button>
     </StyledForm>
   );
 };

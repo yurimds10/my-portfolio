@@ -18,12 +18,21 @@ const HomeImg = styled.div`
   margin-bottom: 2rem;
   display: flex;
   justify-content: end;
+  transform: translateY(0);
   
   @media screen and (min-width: 768px) {
     width: 50%;
     order: 2;
     margin: 0;
   }
+
+  @keyframes floating {
+    to {
+      transform: translateY(5rem);
+    }
+  }
+
+  animation: floating 3s infinite alternate-reverse;
 `;
 
 const HomeTitle = styled.h1`

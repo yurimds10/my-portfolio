@@ -8,10 +8,19 @@ interface ICardsProps {
 export const ServicesCard = styled.div`
   padding: 3rem 2rem;
   border-radius: .5rem;
-  border: ${(props: ICardsProps) => `2px solid ${props.border === 'primary' ? obj.colors.mainColor : obj.colors.lightColor}`};
+  border: 2px solid ${(props: ICardsProps) => props.border === 'primary' ? obj.colors.mainColor : obj.colors.lightColor};
   display: flex;
   flex-direction: column;
   align-items: center;
+  transition: .3s;
+
+  &:hover {
+    transform: translateY(-.5rem);
+    
+    svg {
+      color: ${obj.colors.mainColor};
+    }
+  }
 
   svg {
     font-size: 5rem;

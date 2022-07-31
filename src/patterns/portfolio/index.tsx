@@ -24,7 +24,9 @@ const Portfolio = () => {
             <Image src={HeadphoneImg} alt="headphone-image" />
           </div>
           <h3>Headphone - Landing Page</h3>
-          <Description>🎧 | Uma Landing Page sobre headphones Beats</Description>
+          <Description>
+            🎧 | Uma Landing Page sobre headphones Beats
+          </Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">
               Acessar
@@ -40,7 +42,9 @@ const Portfolio = () => {
             <Image src={CoffeeImg} alt="coffee-image"/>
           </div>
           <h3>Coffee - Landing Page</h3>
-          <Description>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.</Description>
+          <Description>
+            ☕ | Uma Landing Page do nicho de cafés
+          </Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">
               Live
@@ -57,7 +61,7 @@ const Portfolio = () => {
           </div>
           <h3>NFT Marketplace - Landing Page</h3>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.
+            Uma Landing Page de um marketplace de nfts
           </Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">
@@ -75,7 +79,7 @@ const Portfolio = () => {
           </div>
           <h3>Vuelamp - Landing Page</h3>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.
+            💡 | Uma Landing Page de vendas de Lampadas
           </Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">
@@ -93,7 +97,7 @@ const Portfolio = () => {
           </div>
           <h3>Plants - Landing Page</h3>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.
+            🎍 | Uma Landing Page de vendas de plantas.
           </Description>
           <Grid width="40%" gap="1rem">
             <Button href="https://plants-472428.netlify.app/" target="_blank" color="primary">
@@ -111,7 +115,7 @@ const Portfolio = () => {
           </div>
           <h3>Promodoro App</h3>
           <Description>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus nobis adipisci unde. Ipsa cumque aliquid magnam voluptatibus iste iusto quisquam qui consectetur saepe facilis, modi sapiente et labore beatae totam.
+          ⏲ | Um WebApp de produtividade.
           </Description>
           <Grid width="40%" gap="1rem">
             <Button href="" target="_blank" color="primary">

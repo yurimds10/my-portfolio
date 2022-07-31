@@ -12,6 +12,7 @@ export const SkillCard = styled.div`
   transition: .3s;
 
   &:hover {
+    transform: translateY(-.5rem);
     border: 2px solid ${obj.colors.mainColorLighter};
   }
 `;
