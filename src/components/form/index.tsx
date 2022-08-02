@@ -1,42 +1,27 @@
 /* eslint-disable react/no-unescaped-entities */
-import { useRef } from "react";
 import { Button } from "../button/styles";
 import { StyledForm, FormTitle, Label, Input, TextArea } from "./styles";
 
-type Message = {
-  myEmail: string;
-  name: string;
-  email: string;
-  message: string;
-}
-
 export const Form = () => {
 
-  // const sendEmail = (e) => {
-  //   e.preventDefault();
-  //   emailjs
-
-    
-  // };
-
   return (
-    <StyledForm method="POST" >
+    <StyledForm action="https://formsubmit.co/contato.yurimendess@gmail.com" method="POST" >
       <FormTitle>Contact me, let's make magic together</FormTitle>
       <Label htmlFor="name">
         Name
-        <Input type="text" onChange={(e) => e.target.value}/>
+        <Input type="text" required/>
       </Label>
 
       <Label htmlFor="email">
         Email
-        <Input type="email" />
+        <Input type="email" required/>
       </Label>
 
       <Label htmlFor="name">
         Message
-        <TextArea />
+        <TextArea required/>
       </Label>
-      <Button color="primary">Send</Button>
+      <Button type="submit" color="primary">Send</Button>
     </StyledForm>
   );
 };

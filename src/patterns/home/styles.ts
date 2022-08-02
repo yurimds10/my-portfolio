@@ -45,9 +45,26 @@ const HomeTitle = styled.h1`
     display: block;
     
     &.name {
+      width: 275px;
       color: ${obj.colors.mainColor};
       font-size: 3rem;
       margin-bottom: .25rem;
+      overflow: hidden;
+      white-space: nowrap;
+      border-right: 2px solid;
+      animation: typing 3s steps(30), blink .4s infinite alternate;
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+      }
+
+      @keyframes blink {
+        40% {
+          border-color: ${obj.colors.mainColor};
+        }
+      }
     }
 
     &.job {

@@ -28,11 +28,23 @@ const Portfolio = () => {
             🎧 | Uma Landing Page sobre headphones Beats
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
-              Acessar
+            <Button color="primary">
+              <a
+                href="https://headphone-website-xi.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="" target="_blank" color="secondary">
-              Repositório
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/headphone-website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>
@@ -46,11 +58,23 @@ const Portfolio = () => {
             ☕ | Uma Landing Page do nicho de cafés
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
-              Live
+            <Button color="primary">
+              <a
+                href="https://cafenacoffees.netlify.app/#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="" target="_blank" color="secondary">
-              Repository
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/coffee-website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>
@@ -64,11 +88,23 @@ const Portfolio = () => {
             Uma Landing Page de um marketplace de nfts
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
-              Live
+            <Button color="primary">
+              <a
+                href="https://nft-marketplace-3hahf6.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="https://github.com/YuriMendess/NFT-Marketplace" target="_blank" color="secondary">
-              Repository
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/NFT-Marketplace"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>
@@ -82,11 +118,23 @@ const Portfolio = () => {
             💡 | Uma Landing Page de vendas de Lampadas
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
-              Live
+            <Button color="primary">
+              <a
+                href="https://vuelamp23dj0.netlify.app/#"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="" target="_blank" color="secondary">
-              Repository
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/vue-lamp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>
@@ -100,11 +148,23 @@ const Portfolio = () => {
             🎍 | Uma Landing Page de vendas de plantas.
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="https://plants-472428.netlify.app/" target="_blank" color="primary">
-              Live
+            <Button color="primary">
+              <a
+                href="https://plants-472428.netlify.app/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="https://github.com/YuriMendess/plants-website" target="_blank" color="secondary">
-              Repository
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/plants-website"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>
@@ -118,11 +178,23 @@ const Portfolio = () => {
           ⏲ | Um WebApp de produtividade.
           </Description>
           <Grid width="40%" gap="1rem">
-            <Button href="" target="_blank" color="primary">
-              Live
+            <Button color="primary">
+              <a
+                href="https://promodorotimer-app4.netlify.app"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Visualizar
+              </a>
             </Button>
-            <Button href="" target="_blank" color="secondary">
-              Repository
+            <Button color="secondary">
+              <a
+                href="https://github.com/YuriMendess/Promodoro-App"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Repositório
+              </a>
             </Button>
           </Grid>
         </PortfolioCard>

@@ -22,14 +22,14 @@ const Home = () => {
             <span className="job">Desenvolvedor front-end</span>
           </HomeTitle>
           <Description>
-            Estudante de desenvolvimento front-end e apaixonado por tecnologia
+            Estudante de desenvolvimento front-end e apaixonado por tecnologia.
           </Description>
-          <Button href="#about" color="primary" margin="1rem">
-            Sobre Mim
+          <Button color="primary" margin="1rem">
+          <a href="#about">Meus Projetos</a>
             <FaUserAlt/>
           </Button>
-          <Button href="#portfolio" color="secondary">
-            Meus Projetos
+          <Button color="secondary">
+            <a href="#portfolio">Meus Projetos</a>
             <AiFillPicture/>
           </Button>
         </Content>

@@ -7,7 +7,7 @@ interface IButtonProps {
   padding?: string;
 }
 
-const Button = styled.a`
+const Button = styled.button`
   @media screen and (max-width: 400px) {
     margin: 0 0 1rem 0;
   }
@@ -15,7 +15,7 @@ const Button = styled.a`
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  padding: ${(props: IButtonProps) => props.padding ?? `.5rem 2rem`};
+  padding: ${(props: IButtonProps) => props.padding ?? `.75rem 2rem`};
   background-color: ${(props: IButtonProps) => props.color === 'primary' ? obj.colors.mainColor : 'transparent'};
   color: #fff;
   border: 2px solid ${obj.colors.mainColor};
