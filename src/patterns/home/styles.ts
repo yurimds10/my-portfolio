@@ -19,20 +19,35 @@ const HomeImg = styled.div`
   display: flex;
   justify-content: end;
   transform: translateY(0);
+  animation: floating 3s infinite alternate-reverse;
+
+  @keyframes floating {
+    to {
+      transform: translateY(2rem);
+    }
+  }
+
+  @media screen and (min-width: 420px) {
+    width: 90%;
+  }
   
+  @media screen and (min-width: 568px) {
+    width:70%;
+  }
+
   @media screen and (min-width: 768px) {
     width: 50%;
     order: 2;
     margin: 0;
-  }
 
-  @keyframes floating {
-    to {
-      transform: translateY(5rem);
+    @keyframes floating {
+      to {
+        transform: translateY(5rem);
+      }
     }
   }
 
-  animation: floating 3s infinite alternate-reverse;
+  
 `;
 
 const HomeTitle = styled.h1`
@@ -52,7 +67,7 @@ const HomeTitle = styled.h1`
       overflow: hidden;
       white-space: nowrap;
       border-right: 2px solid;
-      animation: typing 3s steps(30), blink .4s infinite alternate;
+      animation: typing 3s steps(25), blink .4s infinite alternate;
 
       @keyframes typing {
         from {
